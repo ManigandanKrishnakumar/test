@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xccdf:Tailoring xmlns:xccdf="http://checklists.nist.gov/xccdf/1.2" id="xccdf_scap-workbench_tailoring_default">
+  <xccdf:benchmark href="/tmp/scap-workbench-zWOfCr/ssg-ubuntu1804-ds.xml"/>
+  <xccdf:version time="2022-04-18T21:48:54">1</xccdf:version>
+  <xccdf:Profile id="xccdf_org.ssgproject.content_profile_anssi_np_nt28_average_customized" extends="xccdf_org.ssgproject.content_profile_anssi_np_nt28_average">
+    <xccdf:title xmlns:xhtml="http://www.w3.org/1999/xhtml" xml:lang="en-US" override="true">Profile for ANSSI DAT-NT28 Average (Intermediate) Level [CUSTOMIZED]</xccdf:title>
+    <xccdf:description xmlns:xhtml="http://www.w3.org/1999/xhtml" xml:lang="en-US" override="true">This profile contains items for GNU/Linux installations already protected by multiple higher level security stacks.</xccdf:description>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sshd_set_keepalive_0" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sshd_set_idle_timeout" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sshd_disable_root_login" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sshd_disable_empty_passwords" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sshd_allow_only_protocol2" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_package_ntp_installed" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_group_deprecated" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_package_telnetd_removed" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_package_telnetd-ssl_removed" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_package_ntpdate_removed" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_package_nis_removed" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_package_inetutils-telnetd_removed" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_group_apt" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_apt_conf_disallow_unauthenticated" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sysctl_kernel_randomize_va_space" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sysctl_fs_suid_dumpable" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_file_permissions_etc_shadow" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_file_permissions_etc_passwd" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_file_permissions_etc_gshadow" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_file_permissions_etc_group" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_file_owner_etc_shadow" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_file_owner_etc_passwd" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_file_owner_etc_gshadow" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_file_owner_etc_group" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_file_groupowner_etc_shadow" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_file_groupowner_etc_passwd" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_file_groupowner_etc_gshadow" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_file_groupowner_etc_group" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sysctl_fs_protected_symlinks" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sysctl_fs_protected_hardlinks" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_file_permissions_systemmap" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_group_log_rotation" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_ensure_logrotate_activated" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_rsyslog_files_permissions" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_rsyslog_files_ownership" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_rsyslog_files_groupownership" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sudo_remove_nopasswd" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sudo_remove_no_authenticate" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_partition_for_var_log_audit" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_partition_for_var_log" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_partition_for_var" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_partition_for_tmp" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_partition_for_home" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_group_disk_partitioning" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_group_sudo" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_group_ensure_rsyslog_log_file_configuration" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_group_logging" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_group_permissions_important_account_files" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_group_files" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_group_coredumps" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_group_enable_execshield_settings" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_group_restrictions" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_group_permissions" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_group_ntp" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_group_ssh_server" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_group_ssh" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_group_services" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_installed_OS_is_FIPS_certified" selected="true"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_group_certified-vendor" selected="true"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_group_integrity" selected="true"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_group_software" selected="true"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_group_system" selected="true"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_display_login_attempts" selected="true"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_group_accounts-pam" selected="true"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_group_accounts" selected="true"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_accounts_password_minlen_login_defs" selected="true"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_group_password_expiration" selected="true"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_group_accounts-restrictions" selected="true"/>
+    <xccdf:set-value idref="xccdf_org.ssgproject.content_value_var_accounts_password_minlen_login_defs">16</xccdf:set-value>
+  </xccdf:Profile>
+</xccdf:Tailoring>
